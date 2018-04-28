@@ -1,0 +1,133 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.large-media-container {
+  overflow: hidden;
+}
+
+.large-media-container img {
+  display: block;
+  max-width: 100%;
+  /* background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.small-media-container img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1.875rem;
+}
+
+header .logo {
+  flex: 1;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 3.5rem;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+header .mobile {
+  display: none;
+}
+
+/* Banner */
+
+#banner {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 5.75rem;
+  background-color: #d8d8d8;
+}
+
+#banner .left-content {
+  display: flex;
+  position: relative;
+  width: 80%;
+  margin: 32px;
+}
+
+#banner .right-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+  margin-left: 24px;
+
+}
+
+#banner .large-header {
+  /* display: block; */
+  align-content: center;
+  justify-content: center;
+  /* width: 50%; */
+
+}
+
+#banner .button {
+  margin-top: 1rem;
+  padding: 8px;
+  text-align: center;
+}
+
+#banner h1{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+#banner span {
+  font-style: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#oncampus .middle1 {
+  display: flex;
+  flex-direction: row;
+  /* position: relative;
+  background-color: #d8d8d8; */
+}
+
+#oncampus .left-content {
+  display: flex;
+  position: relative;
+  width: 80%;
+  padding: 32px;
+}
