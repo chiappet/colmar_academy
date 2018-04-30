@@ -6,7 +6,7 @@ html {
 }
 
 .button {
-  border-radius: 4px;
+  /* border-radius: 4px; */
   background-color: #4a4a4a;
   color: white;
 }
@@ -41,7 +41,8 @@ header {
 header .content {
   display: flex;
   align-items: center;
-  padding: 1.875rem;
+  /* padding: 1.875rem; */
+  padding: 24px;
 }
 
 header .logo {
@@ -80,8 +81,8 @@ header .mobile {
 #banner .left-content {
   display: flex;
   position: relative;
-  width: 80%;
-  padding: 32px;
+  width: 60%;
+  margin: 32px 24px;
 }
 
 #banner .right-content {
@@ -89,7 +90,11 @@ header .mobile {
   justify-content: center;
   align-items: center;
   /* position: relative; */
-  margin-left: 24px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 24px;
+  width: 40%;
+  /* border: 1px solid black; */
 
 }
 
@@ -300,12 +305,16 @@ header .mobile {
 
 #thesis {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   /* justify-content: space-between; */
   flex-wrap: wrap;
   top: 5.75rem;
   position: relative;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+}
+
+.bottom {
+  display: flex;
 }
 
 #thesis .large-header h1 {
@@ -314,7 +323,7 @@ header .mobile {
   font-weight: bold;
   color: #4a4a4a;
   text-align: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 #thesis .left-content {
@@ -322,16 +331,24 @@ header .mobile {
   flex-direction: column;
   /* border-left: 1px solid #d8d8d8; */
   width: 60%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 32px;
 }
 
 #thesis .large-media-container video {
-  width: 60%;
+  width: 100%;
+  height: auto;
+}
+
+.large-copy {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+
 }
 
 #thesis .large-copy {
-  width: 60%;
+  /* width: 60%; */
   margin-top: 24px;
   /* display: block; */
 }
@@ -345,16 +362,18 @@ header .mobile {
 #thesis .right-content {
   display: flex;
   flex-direction: column;
-  border-left: 1px solid #d8d8d8;
+  /* border-left: 1px solid #d8d8d8; */
   width: 40%;
-  border: 1px solid black;
+  margin-top: 32px;
+  /* border: 1px solid black; */
 }
 
 #thesis .fisma {
-  margin-top: 15px;
+  /* margin-top: 15px; */
   display: flex;
   align-content: center;
   border-bottom: 1px solid #d8d8d8;
+  background-color: #d8d8d8;
   /* border: 1px solid black; */
 }
 #thesis .nowthen {
@@ -399,18 +418,23 @@ header .mobile {
   margin-bottom: 8px;
 }
 
-
-
-
-
-
 /* Footer */
 
 footer {
   display: flex;
+  flex-direction: column;
+  border-top: 1px solid #d8d8d8;
+
+}
+
+footer .content {
+  display: flex;
   /* flex-direction: column; */
   font-size: .75rem;
   padding: 1.5rem 2rem;
+  top: 5.75rem;
+
+  /* border: 1px solid black; */
 }
 
 footer .copyright {
