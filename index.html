@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <title>Colmar Academy</title>
   </head>
   <body>
@@ -11,9 +13,9 @@
   <!-- Header -->
     <header>
       <div class="content">
-        <img src="./resources/images/ic-logo.svg" />
+        <img src="./resources/images/ic-logo.svg" alt="logo"/>
         <a href="index.html" class="desktop logo"><strong>Colmar</strong>Academy</a>
-      <nav class="desktop">
+      <nav class="desktop" role="presentation">
         <ul>
           <li><a href="#oncampus">On Campus</a></li>
           <li><a href="#online">Online</a></li>
@@ -22,11 +24,11 @@
         </ul>
       </nav>
 
-      <nav class="mobile">
+      <nav class="mobile" role="presentation">
         <ul>
-          <li><a href="#oncampus"><img src="./resources/images/ic-on-campus.svg"></a></li>
-          <li><a href="#online"><img src="./resources/images/ic-online.svg"></a></li>
-          <li><a href="#signin"><img src="./resources/images/ic-login.svg"></a></li>
+          <li><a href="#oncampus"><img src="./resources/images/ic-on-campus.svg" alt="on campus"></a></li>
+          <li><a href="#online"><img src="./resources/images/ic-online.svg" alt="on-line"></a></li>
+          <li><a href="#signin"><img src="./resources/images/ic-login.svg" alt="sign-in"></a></li>
         </ul>
       </nav>
 
@@ -46,7 +48,7 @@
       <div class="right-content">
         <div class="large-header">
           <h1>Learn something new everyday</h1>
-          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+          <span aria-label="Lorem Ipsum copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
             <div class="button">
               <p>Start here</p>
             </div>
@@ -62,11 +64,11 @@
       <!-- Left-side Content -->
       <div class="left-content">
         <div class="large-media-container">
-          <img src="./resources/images/information-main.jpg" />
+          <img src="./resources/images/information-main.jpg" alt="Man reading book"/>
         </div>
         <div class="large-header">
           <h1>It doesn't hurt to keep practicing</h1>
-          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+          <span aria-label="Lorem Ipsum copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
         </div>
         <div class="attribution">
           <span>Emanuel, Sr Strategist at Hiring.com</span>
@@ -77,9 +79,20 @@
       <div class="right-content">
 
         <div class="orientation">
-          <div class="small-media-container">
-            <img src="./resources/images/information-orientation.jpg" />
+
+          <div class='small-media-container'>
+            <picture>
+              <source media='(min-width: 401px)'
+                      srcset='./resources/images/information-orientation.jpg'/>
+              <source media='(max-width: 480px)'
+                      srcset='./resources/images/information-orientation-mobile.jpg'/>
+              <img src='./resources/images/information-orientation-mobile.jpg'/>
+            </picture>
           </div>
+
+          <!-- <div class="small-media-container">
+            <img src="./resources/images/information-orientation.jpg" alt="Shadows of people walking" />
+          </div> -->
           <div class="small-header">
             <h1>Orientation date</h1>
             <span>Tue 10/11 & Wed 10/12: 8am-3pm</span>
@@ -108,7 +121,7 @@
 
     <div class="lecture">
       <div class="small-media-container">
-        <img src="./resources/images/information-guest-lecture.jpg" />
+        <img src="./resources/images/information-guest-lecture.jpg" alt="Lecturer headshot"/>
       </div>
       <div class="small-header">
         <h1>Our guest lecture</h1>
@@ -134,7 +147,7 @@
 
         <div class="engineering">
           <div class="course-image-container">
-            <img src="./resources/images/course-software.jpg" />
+            <img src="./resources/images/course-software.jpg" alt="Bright computer monitors in a dark room"/>
           </div>
           <div class="course-copy">
             <h2>Software engineering</h2>
@@ -147,7 +160,7 @@
 
         <div class="art">
           <div class="course-image-container">
-            <img src="./resources/images/course-computer-art.jpg" />
+            <img src="./resources/images/course-computer-art.jpg" alt="Hand holding a mobile phone with cup of coffe on table"/>
           </div>
           <div class="course-copy">
             <h2>Computer Art</h2>
@@ -160,7 +173,7 @@
 
         <div class="design">
           <div class="course-image-container">
-            <img src="./resources/images/course-design.jpg" />
+            <img src="./resources/images/course-design.jpg" alt="Man taking photo with retro camera"/>
           </div>
           <div class="course-copy">
             <h2>Design</h2>
@@ -186,7 +199,7 @@
 
         <div class="business">
           <div class="course-image-container">
-            <img src="./resources/images/course-business.jpg" />
+            <img src="./resources/images/course-business.jpg" alt="Chess set"/>
           </div>
           <div class="course-copy">
             <h2>Business</h2>
@@ -213,19 +226,36 @@
       </div>
 
     </div>
-  </div>
+    </div>
+
 </div>
+
+  <section>
+    <div class="mobile-courses">
+      <div class="large-header">
+        <h1>Start Learning</h1>
+      </div>
+
+      <ul role="presentation">
+        <li>Software engineering</li>
+        <li>Computer Art</li>
+        <li>Design</li>
+        <li>Data</li>
+        <li>Business</li>
+        <li>Marketing</li>
+      </ul>
+    </section>
+
+
+
 
     <!-- Thesis -->
 
     <div id="thesis">
       <div class="large-header">
-        <h1>Thesis exhibit</h1>
+        <h1>Thesis exhibits</h1>
       </div>
       <div class="bottom">
-
-
-
 
       <!-- Left-side Content -->
       <div class="left-content">
@@ -236,7 +266,7 @@
         </div>
         <div class="large-copy">
           <h2>Reimagine urban</h2>
-          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+          <span aria-label="Lorem Ipsum copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
         </div>
       </div>
 
@@ -245,7 +275,7 @@
 
         <div class="fisma">
           <div class="small-media-container">
-            <img src="./resources/images/thesis-fisma.jpg" />
+            <img src="./resources/images/thesis-fisma.jpg" alt="Hand highlighting concept designs"/>
           </div>
           <div class="small-header">
             <h1>Fisma: Design and Prototype</h1>
@@ -255,7 +285,7 @@
 
         <div class="nowthen">
           <div class="small-media-container">
-            <img src="./resources/images/thesis-now-and-then.jpg" />
+            <img src="./resources/images/thesis-now-and-then.jpg" alt="New York skyline"/>
           </div>
           <div class="small-header">
             <h1>Now and then</h1>

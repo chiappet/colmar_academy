@@ -71,21 +71,105 @@ header .mobile {
     display: none;
   }
 
-  /* header .logo {
-    flex-grow: 1;
-  } */
-
   header .mobile {
     display: flex;
     width: 90%;
+    position: absolute;
     /* border: 1px solid black; */
     justify-content: flex-end;
   }
 
   header .mobile a {
     margin-left: 75px;
-
   }
+
+  #banner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .large-media-container {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+  }
+
+
+  #banner .right-content {
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid black;
+  }
+
+  #oncampus .left-content {
+    display: none;
+  }
+
+  .small-media-container picture {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  #thesis .bottom .right-content {
+    display: none;
+  }
+
+  #online .middle2 {
+  display: none;
+  }
+
+  #online .course {
+    display: none;
+  }
+
+  section .mobile-courses {
+    display: block;
+    position: relative;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    top: 4rem;
+  }
+
+  section .large-header {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #4a4a4a;
+  }
+
+  section ul li {
+    padding: 16px 0 24px 16px;
+    margin-bottom: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+    background-color: #d8d8d8;
+    color: #4a4a4a;
+    font-weight: bold;
+  }
+
+  #thesis .large-copy {
+    display: none;
+  }
+
+  #thesis .large-media-container video {
+    /* display: flex;
+    flex-direction: column; */
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* align-items: stretch; */
+    border: 1px solid black;
+  }
+
+
 
 
 
@@ -246,7 +330,7 @@ header .mobile {
 
 .link a {
   margin-top: 8px;
-  color: blue;
+  color: #3aacdb;
 }
 
 .lecture {
@@ -264,6 +348,10 @@ header .mobile {
   position: relative;
   color: #4a4a4a;
   /* border: 1px solid black; */
+}
+
+section .mobile-courses {
+  display: none;
 }
 
 #online h1 {
