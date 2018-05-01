@@ -6,7 +6,6 @@ html {
 }
 
 .button {
-  /* border-radius: 4px; */
   background-color: #4a4a4a;
   color: white;
 }
@@ -18,15 +17,7 @@ html {
 .large-media-container img {
   display: block;
   max-width: 100%;
-  /* background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat; */
 }
-
-/* .small-media-container img {
-  display: block;
-  max-width: 100%;
-} */
 
 /* Header */
 
@@ -41,12 +32,16 @@ header {
 header .content {
   display: flex;
   align-items: center;
-  /* padding: 1.875rem; */
-  padding: 24px;
+  margin: 16px 24px;
 }
 
 header .logo {
   flex: 1;
+}
+
+.logo strong {
+  font-weight: bold;
+
 }
 
 header nav ul {
@@ -54,13 +49,12 @@ header nav ul {
 }
 
 nav li {
-  padding-left: 3.5rem;
+  margin-left: 16px;
+
 }
 
 nav a {
-  vertical-align: bottom;
-  line-height: 1.6;
-  font-size: 1rem;
+  font-size: .75rem;
   color: #4a4a4a;
 }
 
@@ -74,7 +68,7 @@ header .mobile {
   display: flex;
   flex-direction: row;
   position: relative;
-  top: 5.75rem;
+  top: 4rem;
   background-color: #d8d8d8;
 }
 
@@ -89,7 +83,6 @@ header .mobile {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
   margin-top: 32px;
   margin-bottom: 32px;
   margin-right: 24px;
@@ -99,10 +92,8 @@ header .mobile {
 }
 
 #banner .large-header {
-  /* display: block; */
   align-content: center;
   justify-content: center;
-  /* width: 50%; */
 
 }
 
@@ -116,32 +107,29 @@ header .mobile {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  color: #4a4a4a;
 }
+
 #banner span {
   font-style: bold;
   font-size: 1rem;
   padding-bottom: 1rem;
+  color: #4a4a4a;
 }
-
-
 
 #oncampus, #thesis, footer {
   display: flex;
   flex-direction: row;
   /* border: 1px solid black; */
   position: relative;
-  top: 5.75rem;
-  /* position: relative;
-  background-color: #d8d8d8; */
+  top: 4rem;
 }
 
 
 /* OnCampus */
 
 #oncampus .left-content {
-  /* display: inline-block;
-  position: relative; */
-  width: 62%;
+  width: 60%;
   padding: 32px;
 }
 
@@ -154,21 +142,24 @@ header .mobile {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 24px;
+  color: #4a4a4a;
+}
+
+#oncampus .large-header span {
+  color: #4a4a4a;
 }
 
 .attribution {
   font-size: .65rem;
   margin-top: 24px;
-  /* margin-bottom: 32px; */
 }
 
 #oncampus .right-content {
   display: flex;
-  /* margin-top: 32px; */
-  /* justify-content: center; */
   flex-direction: column;
   border-left: 1px solid #d8d8d8;
   width: 40%;
+  color: #4a4a4a;
 }
 
 #oncampus .orientation {
@@ -238,10 +229,10 @@ header .mobile {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* padding: 4rem 5%; */
   background-color: #d8d8d8;
-  top: 5.75rem;
+  top: 4rem;
   position: relative;
+  color: #4a4a4a;
   /* border: 1px solid black; */
 }
 
@@ -260,7 +251,6 @@ header .mobile {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 72px;
-  /* padding: 32px 72px; */
 }
 
 .engineering, .art, .design, .data, .business, .marketing{
@@ -306,9 +296,7 @@ header .mobile {
 #thesis {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  flex-wrap: wrap;
-  top: 5.75rem;
+  top: 4rem;
   position: relative;
   /* border: 1px solid black; */
 }
@@ -329,10 +317,10 @@ header .mobile {
 #thesis .left-content {
   display: flex;
   flex-direction: column;
-  /* border-left: 1px solid #d8d8d8; */
   width: 60%;
   /* border: 1px solid black; */
   padding: 32px;
+  color: #4a4a4a;
 }
 
 #thesis .large-media-container video {
@@ -343,14 +331,9 @@ header .mobile {
 .large-copy {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-
-}
-
-#thesis .large-copy {
-  /* width: 60%; */
+  /* border: 1px solid black; */
   margin-top: 24px;
-  /* display: block; */
+
 }
 
 #thesis .large-copy h2 {
@@ -362,14 +345,13 @@ header .mobile {
 #thesis .right-content {
   display: flex;
   flex-direction: column;
-  /* border-left: 1px solid #d8d8d8; */
   width: 40%;
   margin-top: 32px;
+  color: #4a4a4a;
   /* border: 1px solid black; */
 }
 
 #thesis .fisma {
-  /* margin-top: 15px; */
   display: flex;
   align-content: center;
   border-bottom: 1px solid #d8d8d8;
@@ -424,19 +406,22 @@ footer {
   display: flex;
   flex-direction: column;
   border-top: 1px solid #d8d8d8;
+  color: #4a4a4a;
 
 }
 
 footer .content {
   display: flex;
-  /* flex-direction: column; */
   font-size: .75rem;
-  padding: 1.5rem 2rem;
-  top: 5.75rem;
-
+  margin: 16px 24px;
+  top: 4rem;
   /* border: 1px solid black; */
 }
 
 footer .copyright {
   flex-grow: 1;
+}
+
+footer a {
+  margin-right: 16px;
 }
